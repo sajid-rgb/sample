@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: whitesmoke;
+            width: 50%;
+            border: 2px solid black;
+            /* margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto; */
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn1 {
+            width: 50px;
+            background-color: blue;
+            color: white;
+        }
+
+        .btn2 {
+            width: 50px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class='btn1' id='btn1'>-</button>
+        <h1 id='count'>0</h1>
+        <button class="btn2" id='btn2'>+</button>
+
+
+    </div>
+    <h1 id="value"></h1>
+
+    <script>
+        document.getElementById("btn2").addEventListener("click", function () {
+            // alert("pressed")
+            // var name = prompt("Enter your name")
+            // document.getElementById("value").innerText=name;
+
+            var count = document.getElementById("count").innerText;
+            // console.log(count)
+            // console.log(typeof (count))
+            var countInt = parseInt(count)
+            // console.log(typeof (countInt))
+            countInt = countInt + 1
+            console.log(countInt)
+            document.getElementById("count").innerText = countInt
+
+
+        })
+        document.getElementById("btn1").addEventListener("click", function () {
+            // alert("pressed")
+            // var name = prompt("Enter your name")
+            // document.getElementById("value").innerText=name;
+
+            var count = document.getElementById("count").innerText;
+            // console.log(count)
+            // console.log(typeof (count))
+            var countInt = parseInt(count)
+            // console.log(typeof (countInt))
+            if (countInt > 0) {
+                countInt = countInt - 1
+                console.log(countInt)
+                document.getElementById("count").innerText = countInt
+            }
+
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>
