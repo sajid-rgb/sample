@@ -5,86 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
-        div {
-            background-color: whitesmoke;
-            width: 50%;
-            border: 2px solid black;
-            /* margin-left: auto;
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto; */
-            margin: auto;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn1 {
-            width: 50px;
-            background-color: blue;
-            color: white;
-        }
-
-        .btn2 {
-            width: 50px;
-            background-color: green;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
-    <div>
-        <button class='btn1' id='btn1'>-</button>
-        <h1 id='count'>0</h1>
-        <button class="btn2" id='btn2'>+</button>
+   <div class="header">
+        <div>
+           <h1 class="title">DARAZ</h1>
+           <h5 class="subtitle">BEST ONLINE SHOP</h5>
+        </div>
+        <div>
+         <h5 class='login'>LOG IN</h5>
+        </div>
+   </div>
+   <div class='section'>
+       <div class='section1' id='section1'>
+         <p id='p1'>
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet itaque? Voluptate, deleniti sint! Fugit deserunt magnam neque quaerat fuga modi recusandae ut nisi, quos itaque laboriosam saepe sequi repellendus.
+         </p>
+         <button onclick="handleClick()">Click me</button>
+       </div>
+       <div class='section2'>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempora obcaecati, corrupti rem possimus odit non fugiat saepe, porro maiores ipsum magnam cupiditate ullam provident, voluptatem laudantium blanditiis unde quidem pariatur mollitia natus dolorem amet quas. Fugiat, temporibus velit laborum accusamus et quas nulla minus quibusdam corrupti aperiam sequi sit?</p>
+         
+       </div>
+
+       <div class='section3'>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempora obcaecati, corrupti rem possimus odit non fugiat saepe, porro maiores ipsum magnam cupiditate ullam provident, voluptatem laudantium blanditiis unde quidem pariatur mollitia natus dolorem amet quas. Fugiat, temporibus velit laborum accusamus et quas nulla minus quibusdam corrupti aperiam sequi sit?</p>
+        
+      </div>
+   </div>
 
 
-    </div>
-    <h1 id="value"></h1>
+    <!-- <button onclick="handleClick()">
+        Click
+    </button> -->
 
-    <script>
-        document.getElementById("btn2").addEventListener("click", function () {
-            // alert("pressed")
-            // var name = prompt("Enter your name")
-            // document.getElementById("value").innerText=name;
-
-            var count = document.getElementById("count").innerText;
-            // console.log(count)
-            // console.log(typeof (count))
-            var countInt = parseInt(count)
-            // console.log(typeof (countInt))
-            countInt = countInt + 1
-            console.log(countInt)
-            document.getElementById("count").innerText = countInt
-
-
-        })
-        document.getElementById("btn1").addEventListener("click", function () {
-            // alert("pressed")
-            // var name = prompt("Enter your name")
-            // document.getElementById("value").innerText=name;
-
-            var count = document.getElementById("count").innerText;
-            // console.log(count)
-            // console.log(typeof (count))
-            var countInt = parseInt(count)
-            // console.log(typeof (countInt))
-            if (countInt > 0) {
-                countInt = countInt - 1
-                console.log(countInt)
-                document.getElementById("count").innerText = countInt
-            }
-
-        })
-    </script>
-
-
-
-
+    <script src="main.js"></script>
 </body>
 
 </html>

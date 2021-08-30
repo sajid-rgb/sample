@@ -1,0 +1,45 @@
+.header{
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+
+}
+.title,.subtitle,.login{
+    color: white;
+    margin-left: 20px;
+    
+}
+.title{
+    font-size: 20px;
+    
+
+}
+
+.login{
+    margin-right: 20px;
+    font-size: 25px;
+
+}
+
+.section{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding:10px;
+}
+
+.section1{
+    border: 2px solid grey;
+    padding:40px;
+    background-color: antiquewhite;
+}
+.section2{
+    border: 2px solid green;
+    padding:40px;
+}
+.section3{
+    border: 2px solid blue;
+    padding:40px;
+}
+p{
+    text-align:justify;
+}
